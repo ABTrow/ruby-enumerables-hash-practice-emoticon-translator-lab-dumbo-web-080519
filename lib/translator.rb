@@ -5,6 +5,7 @@ def load_library(file)
  
   formatted = {"get_emoticon" => {}, "get_meaning" => {}}
 
+  formatted
 end
 
 def get_japanese_emoticon
