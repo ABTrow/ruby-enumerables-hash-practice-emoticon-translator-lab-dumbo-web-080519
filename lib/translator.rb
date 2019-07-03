@@ -5,9 +5,9 @@ def load_library(file)
  
   formatted = {"get_emoticon" => {}, "get_meaning" => {}}
   
-  data.each do |meaning, [english, japanese]|
-    if !formatted["get_meaning"].has_key?(japanese)
-      formatted["get_meaning"][japanese] = "foo"
+  data.each do |meaning, symbols|
+    if !formatted["get_meaning"].has_key?(symbols[1])
+      formatted["get_meaning"][symbols[1]] = "foo"
     end
   end
   formatted
