@@ -1,9 +1,9 @@
 require "yaml"
 
 def load_library(file)
-  library = YAML.load_file(file)
-  p library
-  library
+  data = YAML.load_file(file)
+ 
+  formatted = {"get_emoticon" => {}, "get_meaning" => {}}
 
 end
 
