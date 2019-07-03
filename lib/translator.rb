@@ -7,7 +7,7 @@ def load_library(file)
   
   data.each do |meaning, symbols|
     if !formatted["get_meaning"].has_key?(symbols[1])
-      formatted["get_meaning"][symbols[1]] = "foo"
+      formatted["get_meaning"][symbols[1]] = meaning
     end
   end
   formatted
